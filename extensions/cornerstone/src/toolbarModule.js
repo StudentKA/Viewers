@@ -237,6 +237,15 @@ const definitions = [
       },
     ],
   },
+  {
+    id: 'HelloWorldTool',
+    label: 'Hello World Tool',
+    icon: 'circle-o',
+    //
+    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+    commandName: 'setToolActive',
+    commandOptions: { toolName: 'HelloWorldMouse' },
+  },
 ];
 
 export default {

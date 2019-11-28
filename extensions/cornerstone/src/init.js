@@ -3,6 +3,7 @@ import cornerstone from 'cornerstone-core';
 import csTools from 'cornerstone-tools';
 import initCornerstoneTools from './initCornerstoneTools.js';
 import queryString from 'query-string';
+import HelloWorldMouseTool from 'cornerstone-tool-example';
 
 function fallbackMetaDataProvider(type, imageId) {
   if (!imageId.includes('wado?requestType=WADO')) {
@@ -95,6 +96,7 @@ export default function init({ servicesManager, configuration = {} }) {
     RectangleRoiTool,
     // Segmentation
     BrushTool,
+    HelloWorldMouseTool,
   ];
 
   tools.forEach(tool => csTools.addTool(tool));
