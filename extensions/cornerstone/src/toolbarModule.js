@@ -238,8 +238,17 @@ const definitions = [
     ],
   },
   {
+    id: 'Contour',
+    label: 'Contour',
+    icon: 'circle-o',
+    //
+    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+    commandName: 'setToolActive',
+    commandOptions: { toolName: 'Brush' },
+  },
+  {
     id: 'HelloWorldTool',
-    label: 'Hello World Tool',
+    label: 'Modify contour',
     icon: 'circle-o',
     //
     type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
